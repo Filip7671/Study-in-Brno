@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Universal box-sizing to prevent overflow */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: Inter, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Background styling */
+.background {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("nl_flag.jpg") no-repeat center center;
+  background-size: cover;
+  opacity: 0.1; /* Reduced opacity for minimalism */
+  z-index: -1;
+}
+
+/* Container for consistent width */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation */
+.navbar {
+  background-color: white;
+  padding: 1rem 0;
+}
+
+nav h2 {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand img {
+  width: 10rem;
+  border-radius: 10%;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #333 !important;
+  font-family: Inter, sans-serif; /* Ensure nav links use Inter font */
+}
+
+.nav-link.active {
+  color: #ffa600 !important;
+}
+
+/* Main Content */
+.study-reasons {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.study-reasons-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Middle Section: Images on the Left, Text on the Right */
+.study-reasons-content.middle {
+  flex-direction: row; /* Default for larger screens */
+}
+
+.reason-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 40%; /* Adjust as needed */
+}
+
+.reason-images .reason-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10%;
+}
+
+.reason-info {
+  flex: 1;
+}
+
+.reason-info h2 {
+  font-size: 1.5rem;
+  color: #ffa600;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reason-info p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem 0;
+  background-color: #f1f1f1;
+}
+
+footer p {
+  font-family: "Segoe UI", Roboto, "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Blue line below the footer */
+.footer-border {
+  width: 100%;
+  height: 5px;
+  background-color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .reason-images {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    overflow: hidden;
+  }
+
+  #middle-images {
+    max-width: 12rem; /* Smaller images for mobile */
+    border-radius: 0 !important;
+  }
+
+  .study-reasons-content.middle {
+    flex-direction: column-reverse !important;
+  }
+
+  .reason {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  #badge {
+    width: 14rem;
+  }
+}

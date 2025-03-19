@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Universal box-sizing to prevent overflow */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: Inter, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background styling */
+.background {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("nl_flag.jpg") no-repeat center center;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* Container for consistent width */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+  background-color: white;
+}
+
+.navbar-brand img {
+  width: 10rem;
+  border-radius: 10%;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-weight: 600 !important;
+}
+
+/* Carousel */
+.carousel-item {
+  height: 60vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Who We Are Section */
+.who-we-are {
+  margin: 2rem 0;
+}
+
+.who-we-are h2 {
+  font-size: 2.5rem;
+  color: #ffa600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.who-we-are-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.who-we-are-text {
+  width: 100%;
+  text-align: center;
+}
+
+.who-we-are img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 7%;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Our Teachers Section */
+.our-teachers {
+  margin: 2rem 0;
+}
+
+.our-teachers h2 {
+  font-size: 2.5rem;
+  color: #ffa600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.our-teachers-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.teacher-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.teacher-info {
+  width: 100%;
+  text-align: center;
+}
+
+.teacher-info h3 {
+  font-size: 1.5rem;
+  color: #ffa600;
+  margin-bottom: 1rem;
+}
+
+.teacher-info p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem 0;
+  background-color: #f1f1f1;
+}
+
+footer p {
+  font-family: "Segoe UI", Roboto, "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Blue line below the footer */
+.footer-border {
+  width: 100%;
+  height: 5px;
+  background-color: #007bff;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .who-we-are-content {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .who-we-are-text {
+    width: 60%;
+  }
+
+  .who-we-are img {
+    width: 40%;
+  }
+
+  .our-teachers-content {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .teacher-info {
+    width: 70%;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
