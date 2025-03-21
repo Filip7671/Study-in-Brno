@@ -56,7 +56,7 @@ nav h2 {
   transition: color 0.3s ease;
 }
 
-.navbar-brand img {
+.navbar-brand .logo {
   width: 10rem;
   border-radius: 10%;
 }
@@ -146,18 +146,31 @@ footer img {
 
 .socials {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 0.3rem;
 }
 
-/* Blue line below the footer */
-.footer-border {
-  width: 100%;
-  height: 5px;
-  background-color: #007bff;
+.social-icons {
+  display: flex;
+  gap: 0.3rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .logo {
+    width: 8rem !important;
+  }
+
+  /* Center navbar links in mobile view */
+  .navbar-nav {
+    width: 100%; /* Ensure the nav takes full width */
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center links horizontally */
+    text-align: center; /* Center text within links */
+  }
+
   .reason-images {
     width: 100%;
     flex-direction: row;

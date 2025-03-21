@@ -22,37 +22,34 @@
     <!-- Bootstrap navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <div>
-          <a class="navbar-brand" href="index.html">
-            <img class="logo" src="Images/Logo-heading.jpg" alt="logo" />
-          </a>
-        </div>
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="Images/Logo-heading.jpg" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
-              <a class="nav-link" href="Study_Programs.html">Study Programs</a>
-              <a class="nav-link" href="Why_Study_With_Us.html"
-                >Why Study with Us</a
-              >
-              <a class="nav-link" href="What_Our_Students_Say.html"
-                >What Our Students Say
-              </a>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <!-- Add ms-auto here -->
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >About Us</a
+            >
+            <a class="nav-link" href="Study_Programs.html">Study Programs</a>
+            <a class="nav-link" href="Why_Study_With_Us.html"
+              >Why Study with Us</a
+            >
+            <a class="nav-link" href="What_Our_Students_Say.html"
+              >What Our Students Say</a
+            >
           </div>
         </div>
       </div>
@@ -89,10 +86,10 @@
             class="d-block w-100"
             alt="..."
           />
-          <div class="carousel-caption d-none d-md-block">
+          <!--<div class="carousel-caption d-none d-md-block">
             <h5></h5>
             <p></p>
-          </div>
+          </div>-->
         </div>
         <div class="carousel-item" data-bs-interval="2000">
           <img
@@ -111,10 +108,10 @@
             class="d-block w-100"
             alt="..."
           />
-          <div class="carousel-caption d-none d-md-block">
+          <!--<div class="carousel-caption d-none d-md-block">
             <h5></h5>
             <p></p>
-          </div>
+          </div>-->
         </div>
       </div>
       <button
@@ -149,6 +146,11 @@
                 Culture at the Faculty of Arts, Masaryk University in Brno,
                 Czechia!
               </p>
+              <img
+                class="phone_image"
+                src="Images/FF-building.jpg"
+                alt="Building"
+              />
               <p>
                 Here, you’ll explore the rich world of Dutch language,
                 literature, and culture. Our department offers the opportunity
@@ -158,7 +160,13 @@
                 exploration of the Dutch-speaking world!
               </p>
             </div>
-            <img src="Images/FF-building.jpg" alt="Building" />
+            <div class="building_image">
+              <img
+                id="desktop_image"
+                src="Images/FF-building.jpg"
+                alt="Building"
+              />
+            </div>
           </div>
         </section>
 
@@ -168,12 +176,12 @@
 
           <!-- First Teacher -->
           <div class="our-teachers-content teacher-1">
-            <img
-              src="Images/Marta_Kostelecka.jpeg"
-              class="teacher-image"
-              alt="Teacher 1 - Dr. Marta Kostelecká"
-            />
             <div class="teacher-info">
+              <img
+                src="Images/Marta_Kostelecka.jpeg"
+                class="teacher-image"
+                alt="Teacher 1 - Dr. Marta Kostelecká"
+              />
               <h3>Mgr. Marta Kostelecká, Ph.D.</h3>
               <p>
                 Marta Kostelecká, Assistant Professor in Dutch Studies,
@@ -189,12 +197,12 @@
 
           <!-- Second Teacher -->
           <div class="our-teachers-content teacher-2">
-            <img
-              src="Images/Sofie_Royeaerd.jpg"
-              class="teacher-image"
-              alt="Teacher 2 - Sofie Royeaerd"
-            />
             <div class="teacher-info">
+              <img
+                src="Images/Sofie_Royeaerd.jpg"
+                class="teacher-image"
+                alt="Teacher 2 - Sofie Royeaerd"
+              />
               <h3>Mgr. Sofie Rose-Anne W. Royeaerd, M.A.</h3>
               <p>
                 Sofie Royeaerd is a lecturer in Dutch studies. Originally from
@@ -214,23 +222,20 @@
 
       <!-- Footer -->
       <footer>
-        <p>Follow Us</p>
-        <a href="https://www.facebook.com/nederlandistikabrno/?locale=cs_CZ">
-          <img
-            src="Images/facebook_logo.png"
-            alt="Link to the Facebook page of the Dutch Studies at Masaryk University in Brno, Czechia"
-          />
-        </a>
-        <a href="https://www.instagram.com/nederlandistika_mu/">
-          <img
-            src="Images/instagram_logo.png"
-            alt="Link to the Instagram page of the Dutch Studies at Masaryk University in Brno, Czechia"
-          />
-        </a>
+        <p style="color: white">Follow Us</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/nederlandistikabrno/?locale=cs_CZ"
+            ><img
+              src="Images/facebook_logo.png"
+              alt="Link to the Facebook page of the Dutch Studies at Masaryk University in Brno, Czechia"
+          /></a>
+          <a href="https://www.instagram.com/nederlandistika_mu/"
+            ><img
+              src="Images/instagram_logo.png"
+              alt="Link to the Instagram page of the Dutch Studies at Masaryk University in Brno, Czechia"
+          /></a>
+        </div>
       </footer>
-
-      <!-- Blue line below the footer -->
-      <div class="footer-border"></div>
     </div>
 
     <script

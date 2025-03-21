@@ -26,38 +26,37 @@
   <body>
     <!-- Bootstrap navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <div>
-          <a class="navbar-brand" href="index.html">
-            <img class="logo" src="Images/Logo-heading.jpg" alt="logo" />
-          </a>
-        </div>
+      <div style="background-color: transparent" class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="Images/Logo-heading.jpg" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              <a class="nav-link active" href="Study_Programs.html"
-                >Study Programs</a
-              >
-              <a class="nav-link" href="Why_Study_With_Us.html"
-                >Why Study with Us</a
-              >
-              <a class="nav-link" href="What_Our_Students_Say.html"
-                >What Our Students Say</a
-              >
-            </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <!-- Add ms-auto here -->
+            <a class="nav-link" aria-current="page" href="index.html"
+              >About Us</a
+            >
+            <a class="nav-link active" href="Study_Programs.html"
+              >Study Programs</a
+            >
+            <a class="nav-link" href="Why_Study_With_Us.html"
+              >Why Study with Us</a
+            >
+            <a class="nav-link" href="What_Our_Students_Say.html"
+              >What Our Students Say</a
+            >
           </div>
         </div>
       </div>
@@ -173,17 +172,17 @@
           <div class="program-heading">
             <h2>MASTER (MA)</h2>
           </div>
-          <!-- Master Program Image -->
+          <!-- Master Program -->
           <div class="parent master">
+            <!-- Image on the Left -->
             <div class="div2">
               <img
                 src="https://gdx-website-images.s3.ap-south-1.amazonaws.com/BlogUploads/GDArticles/Thumbnail/advantages-of-studying-ms-in-management-in-the-netherlands.jpg"
                 alt="Master Program Image"
               />
             </div>
-          </div>
-          <!-- Master Program Text -->
-          <div class="parent master">
+
+            <!-- Text on the Right -->
             <div class="div1">
               <p style="text-align: left" class="program-paragraph">
                 The Translation Studies program focuses on developing the
@@ -208,23 +207,25 @@
       </main>
 
       <footer>
-        <p>Follow Us</p>
-        <a href="https://www.facebook.com/nederlandistikabrno/?locale=cs_CZ">
-          <img
-            src="Images/facebook_logo.png"
-            alt="Link to the Facebook page of the Dutch Studies at Masaryk University in Brno, Czechia"
-          />
-        </a>
-        <a href="https://www.instagram.com/nederlandistika_mu/">
-          <img
-            src="Images/instagram_logo.png"
-            alt="Link to the Instagram page of the Dutch Studies at Masaryk University in Brno, Czechia"
-          />
-        </a>
+        <div class="socials">
+          <p style="color: white">Follow Us</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/nederlandistikabrno/?locale=cs_CZ"
+              ><img
+                src="Images/facebook_logo.png"
+                alt="Link to the Facebook page of the Dutch Studies at Masaryk University in Brno, Czechia"
+            /></a>
+            <a href="https://www.instagram.com/nederlandistika_mu/"
+              ><img
+                src="Images/instagram_logo.png"
+                alt="Link to the Instagram page of the Dutch Studies at Masaryk University in Brno, Czechia"
+            /></a>
+          </div>
+        </div>
       </footer>
 
       <!-- Blue line below the footer -->
-      <div class="footer-border"></div>
+      <!-- <div class="footer-border"></div> -->
     </div>
 
     <script

@@ -12,6 +12,36 @@ body {
   font-family: Inter, sans-serif;
 }
 
+/* Navigation */
+.navbar {
+  background-color: white;
+  padding: 1rem 0;
+}
+
+nav h2 {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand img {
+  width: 10rem;
+  border-radius: 10%;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #333 !important;
+  font-family: Inter, sans-serif; /* Ensure nav links use Inter font */
+}
+
+.nav-link.active {
+  color: #ffa600 !important;
+}
+
 /* Background styling */
 .background {
   position: relative;
@@ -93,7 +123,7 @@ footer {
   align-items: center;
   gap: 10px;
   padding: 1rem 0;
-  background-color: #f1f1f1;
+  background-color: #eb9e47;
 }
 
 footer p {
@@ -109,15 +139,19 @@ footer img {
   object-fit: contain;
 }
 
-/* Blue line below the footer */
-.footer-border {
-  width: 100%;
-  height: 5px;
-  background-color: #007bff;
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 /* Responsive Design */
 @media (max-width: 760px) {
+  .logo {
+    width: 8rem !important;
+  }
+
   h1 {
     font-size: 60px;
   }
@@ -129,5 +163,14 @@ footer img {
 
   .student-info {
     width: 100%;
+  }
+
+  /* Center navbar links in mobile view */
+  .navbar-nav {
+    width: 100%; /* Ensure the nav takes full width */
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center links horizontally */
+    text-align: center; /* Center text within links */
   }
 }
