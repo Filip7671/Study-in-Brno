@@ -130,6 +130,10 @@ main {
   display: block;
 }
 
+.program-paragraph a:hover{
+  color: #ffa600;
+}
+
 #courses_heading {
   font-family: Inter, sans-serif;
   font-size: 60px;

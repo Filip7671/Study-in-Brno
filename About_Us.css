@@ -146,6 +146,14 @@ nav h2 {
   text-align: center;
 }
 
+.teacher-info a {
+  text-decoration: none;
+}
+
+.teacher-info p {
+  margin-top: 1rem;
+}
+
 .teacher-image {
   width: 150px;
   height: 150px;
@@ -165,6 +173,19 @@ nav h2 {
   color: #333;
   line-height: 1.6;
   text-align: center;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 0.7rem;
+}
+
+.faq h5 a {
+  color:#ffa600;
 }
 
 /* Footer */
@@ -226,6 +247,10 @@ footer img {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .who-we-are-text a:hover{
+    color: #ffa600;
   }
 
   .who-we-are p {
